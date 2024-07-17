@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body{
+  background: darkgreen;
+}
+.checklist{
+  margin: 90px auto;
+  max-width: 60%;
+  background-color: whitesmoke;
+  border-radius: 3px;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.493);
+}
+.item{
+  display: flex;
+  border-bottom: 2px solid steelblue;
+  background-color: transparent;
+}
+.item:last-child{
+  border-bottom: 0;
+}
+input:checked + p{
+  background: grey;
+  text-decoration: line-through;
+}
+input[type="checkbox"]{
+  margin: 12px
+}
+p{
+  padding: 12px;
+  flex: 1;
+  border-left: 2px solid steelblue;
+}
